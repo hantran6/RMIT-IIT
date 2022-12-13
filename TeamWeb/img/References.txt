@@ -1,4 +1,6 @@
-Slideshow source code: https://www.w3schools.com/howto/howto_js_slideshow.asp
-	home-pic: https://vietnamnomad.com/destinations/ho-chi-minh-city/
-	home-pic2: https://wallpaperaccess.com/saigon
-	home-pic3: https://www.wallpaperflare.com/search?wallpaper=saigon
+Web template: https://www.youtube.com/watch?v=nPZp-YNPyC8
+Team Profile template: https://www.youtube.com/watch?v=GWE9ay9H7uU
+Images:
+ - Background: https://www.rmit.edu.vn/
+ - 
+
