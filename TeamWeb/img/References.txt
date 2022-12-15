@@ -1,6 +1,0 @@
-Web template: https://www.youtube.com/watch?v=nPZp-YNPyC8
-Team Profile template: https://www.youtube.com/watch?v=GWE9ay9H7uU
-Images:
- - Background: https://www.rmit.edu.vn/
- - 
-
