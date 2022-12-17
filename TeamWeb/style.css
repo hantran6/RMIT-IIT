@@ -408,7 +408,7 @@ header.search-bar-container label:hover{
 .footer .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 10rem;
 }
 
 .footer .box-container .box{
@@ -426,14 +426,13 @@ header.search-bar-container label:hover{
     font-size: 1.5rem;
     padding: 0.7rem 0;
     color: #eee;
-    padding-bottom: 3rem;
 }
 
 .footer .box-container .box a{
-    display: block;
     font-size: 1.5rem;
     padding: 0.7rem 0;
     color: #eee;
+    display: block;
 }
 
 .footer .box-container .box a:hover{
@@ -469,25 +468,11 @@ header.search-bar-container label:hover{
 
 
 /* media queries */
-@media (max-width:1200px){
-    html{
-        font-size: 55%;
-    }
-
-    .logo-container,
-    .reflection .row .image{
-        max-width: 80%;
-    }
-
-
-}
-    
-@media (max-width:991px){
-    header{
-        padding: 2rem;
+@media (max-width: 1634px){
+    .footer .box-container{
+        gap: 3rem;
     }
 }
-
 @media (max-width:1265px){
     #menu-bar{
         display: initial;
@@ -517,13 +502,22 @@ header.search-bar-container label:hover{
     }
 }
 
-@media (max-width:450px){
+@media (max-width:1200px){
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
 
-    .heading span{
-        font-size: 2.5rem;
+    .logo-container,
+    .reflection .row .image{
+        max-width: 80%;
+    }
+
+
+}
+    
+@media (max-width:991px){
+    header{
+        padding: 2rem;
     }
 }
 
@@ -539,3 +533,14 @@ header.search-bar-container label:hover{
         margin: 2rem;
     }
 }
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .heading span{
+        font-size: 2.5rem;
+    }
+}
+
