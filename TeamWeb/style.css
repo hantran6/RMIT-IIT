@@ -343,6 +343,7 @@ header.search-bar-container label:hover{
 
 .description .box p{
     text-align: justify;
+    text-transform: none;
 }
 
 .description .box-container .box i{
@@ -473,6 +474,7 @@ header.search-bar-container label:hover{
         gap: 3rem;
     }
 }
+
 @media (max-width:1265px){
     #menu-bar{
         display: initial;
