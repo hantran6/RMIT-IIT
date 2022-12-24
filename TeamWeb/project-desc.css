@@ -160,6 +160,45 @@ header.search-bar-container label:hover{
     display:none;
 }
 
+.overview,
+.landscape{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow: column;
+    position:relative;
+}
+
+.motivation{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow: column;
+    position:relative;
+    background: #333;
+}
+
+.motivation p{
+    font-size:2rem;
+    color:#fff;
+    text-transform:none;
+    padding: 2rem;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.overview p,
+.landscape p{
+    font-size:2rem;
+    color:#333;
+    text-transform:none;
+    padding: 2rem;
+    text-align: justify;
+    font-weight: normal;
+}
+
 .footer{
     background-color: #333;
 }
