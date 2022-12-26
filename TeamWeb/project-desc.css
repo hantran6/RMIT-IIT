@@ -170,10 +170,10 @@ header.search-bar-container label:hover{
     position:relative;
 }
 
-.motivation{
+.motivation,
+.detail-desc{
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content:center;
     flex-flow: column;
     position:relative;
@@ -197,6 +197,21 @@ header.search-bar-container label:hover{
     padding: 2rem;
     text-align: justify;
     font-weight: normal;
+}
+
+.detail-desc h3{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    color: var(--orange);
+}
+
+.detail-desc .aim p{
+    font-size: 2rem;
+    padding: 0.7rem 0;
+    text-transform: none;
+    border-radius: 0.5rem;
+    text-align: justify;
+    color:#eee
 }
 
 .footer{
