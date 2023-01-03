@@ -12,7 +12,6 @@
     text-transform: capitalize;
     outline:none;
     border: none;
-    text-decoration: none;
     transition: all .2s linear;
 }
 
@@ -28,20 +27,8 @@ html{
     scroll-behavior:smooth;
 }
 
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    background: var(--orange);
-    color:#fff;
-    padding: .8rem 3rem;
-    border: .2rem solid var(--orange);
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.btn:hover{
-    background: rgba(255,165,0,0.2);
-    color:var(--orange);
+header a{
+    text-decoration: none;
 }
 
 section{
@@ -160,39 +147,23 @@ header.search-bar-container label:hover{
     display:none;
 }
 
-.overview,
-.landscape,
-.plan-progress{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-flow: column;
-    position:relative;
-}
-
-.motivation,
-.detail-desc{
+.bright-section{
     min-height: 100vh;
     display: flex;
     justify-content:center;
     flex-flow: column;
     position:relative;
-    background: #333;
 }
 
-.motivation p{
-    font-size:2rem;
-    color:#fff;
-    text-transform:none;
-    padding: 2rem;
-    text-align: justify;
-    font-weight: normal;
+.bright-section h3,
+.dark-section h3{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    color: var(--orange);
+    margin-left: 2rem;
 }
 
-.overview p,
-.landscape p,
-.plan-progress p
+.bright-section p
 {
     font-size:2rem;
     color:#333;
@@ -202,20 +173,43 @@ header.search-bar-container label:hover{
     font-weight: normal;
 }
 
-.detail-desc h3{
-    font-size: 2.5rem;
-    padding-top: 2rem;
-    color: var(--orange);
+.bright-section li{
+    font-size:1.8rem;
+    color:#333;
+    text-transform:none;
+    font-weight: normal;
+    margin-left: 10rem;
 }
 
-.detail-desc .aim p{
-    font-size: 2rem;
-    padding: 0.7rem 0;
-    text-transform: none;
-    border-radius: 0.5rem;
-    text-align: justify;
-    color:#eee
+.dark-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    flex-flow: column;
+    position:relative;
+    background: #333;
 }
+
+.dark-section p{
+    font-size:2rem;
+    color:#fff;
+    text-transform:none;
+    padding: 2rem;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.dark-section li{
+    font-size:1.8rem;
+    color:#fff;
+    text-transform:none;
+    font-weight: normal;
+    margin-left: 10rem;
+}
+
+
+
+
 
 .footer{
     background-color: #333;
@@ -249,6 +243,7 @@ header.search-bar-container label:hover{
     padding: 0.7rem 0;
     color: #eee;
     display: block;
+    text-decoration: none;
 }
 
 .footer .box-container .box a:hover{
@@ -272,6 +267,7 @@ header.search-bar-container label:hover{
     font-size: 5rem;
     color:#fff;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .footer .logo-container span{
@@ -312,19 +308,6 @@ header.search-bar-container label:hover{
 @media (max-width:991px){
     header{
         padding: 2rem;
-    }
-}
-
-@media screen and (min-width: 700px){
-    .card-wrapper{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card{
-        margin: 2rem;
     }
 }
 
