@@ -161,7 +161,8 @@ header.search-bar-container label:hover{
 }
 
 .overview,
-.landscape{
+.landscape,
+.plan-progress{
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -190,7 +191,9 @@ header.search-bar-container label:hover{
 }
 
 .overview p,
-.landscape p{
+.landscape p,
+.plan-progress p
+{
     font-size:2rem;
     color:#333;
     text-transform:none;
