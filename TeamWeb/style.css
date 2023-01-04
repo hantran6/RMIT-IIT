@@ -376,6 +376,84 @@ header.search-bar-container label:hover{
     font-style: italic; */
 }
 
+.skill-job .box-container,
+.skill-job .box-container-dark{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 3rem 5rem 3rem;
+}
+
+.skill-job .box-container-dark{
+    background: #333;
+    width: 100%;
+}
+
+.skill-job .box-container .box,
+.skill-job .box-container-dark .box{
+    flex: 1 1 25rem;
+    padding-top: 2rem;
+}
+
+.skill-job .box .textbox{
+    padding: 0 3rem 2rem 3rem;
+}
+
+.skill-job .box-container .box .textbox:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+}
+
+.skill-job .box-container-dark .box .textbox:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,1);
+}
+
+.skill-job .textbox h3{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.box-container h3,
+.box-container-dark h3{
+    color: var(--orange);
+}
+
+.skill-job .textbox li{
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    text-transform: none;
+    border-radius: 0.5rem;
+    text-align: justify;
+    margin-left: 5rem;
+}
+
+.box-container p{
+    color: #333;
+}
+
+.box-container-dark p{
+    color: #fff;
+}
+
+.box-container .box img,
+.box-container-dark .box img{
+    width: auto;
+    height: 60rem;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(0,0,0,0.2);
+    margin: auto;
+    display:block;
+}
+
+.social-media{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content:  space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
 .reflection .row{
     display: flex;
     flex-wrap: wrap;
@@ -401,6 +479,7 @@ header.search-bar-container label:hover{
     padding: 1rem 0;
     display: block;
 }
+
 
 .footer{
     background-color: #333;
