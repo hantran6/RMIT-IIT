@@ -207,8 +207,37 @@ header.search-bar-container label:hover{
     margin-left: 10rem;
 }
 
+#detail-desc-p1 th,td{
+    font-size: 1.8rem;
+    text-transform:none;
+    color:#eee;
+}
 
+#detail-desc-p1 table th{
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem;
+}
 
+table td{
+    padding: 0 1rem;
+}
+
+.dark-section table, th, td{
+    width: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+#detail-desc-p1 table ul{
+    margin-left: 0;
+}
+
+#detail-desc-p1  li{
+    font-size: 1.8rem;
+    text-transform:none;
+    color:#eee;
+}
 
 
 .footer{
