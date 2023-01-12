@@ -28,23 +28,6 @@ html{
     scroll-behavior:smooth;
 }
 
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    background: var(--orange);
-    color:#fff;
-    padding: .8rem 3rem;
-    border: .2rem solid var(--orange);
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.btn:hover{
-    background: rgba(255,165,0,0.2);
-    color:var(--orange);
-}
-
-
 section{
     padding: 2rem 9%;
 }
@@ -56,7 +39,6 @@ section{
     justify-content:center;
     flex-flow: column;
     position:relative;
-    /* z-index: 0; */
 }
 
 .home .content{
@@ -90,11 +72,6 @@ section{
 .heading{
     text-align: center;
     padding: 0 0 2.5rem 0;
-}
-
-.personal-info .heading{
-    text-align: center;
-    padding: 0 0 2.5rem 0;
     margin-top: 82px;
 }
 
@@ -121,7 +98,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 0 9%;
+    height: 6rem;
 }
 
 header .logo{
@@ -136,16 +114,6 @@ header .logo span
     color:var(--orange);
 }
 
-header .navbar a{
-    color:#fff;
-    font-size: 2rem;
-    margin: 0 2rem;
-}
-
-header .navbar a:hover{
-    color: var(--orange);
-}
-
 header .icons i{
     font-size: 2.5rem;
     color: #fff;
@@ -156,43 +124,6 @@ header .icons i:hover{
     color: var(--orange)
 }
 
-header .search-bar-container{
-    position: absolute;
-    top:100%;
-    left: 0;
-    right: 0;
-    padding: 1.5rem 2rem;
-    background: #333;
-    border-top: .1rem solid rgba(255,255,255,.2);
-    display: flex;
-    align-items: center;
-    z-index:1001;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-
-header .search-bar-container.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-header .search-bar-container #search-bar{
-    width:100%;
-    padding: 1rem;
-    text-transform: none;
-    color: #333;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-}
-
-header.search-bar-container label{
-    color:#fff;
-    cursor: pointer;
-    font-size: 3rem; 
-    margin-left: 1.5rem;
-}
-
-header.search-bar-container label:hover{
-    color:var(--orange);
-}
 
 #menu-bar{
     color: #fff;
@@ -204,19 +135,71 @@ header.search-bar-container label:hover{
     display:none;
 }
 
+#nav i{
+    padding-left: 1rem;
+}
 
-.personal-info{
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: #fff;
+}
+
+#nav li a{
+    font-size: 2rem;
+    line-height: 6rem;
+    padding: 0 5rem;
+    display:block;
+}
+
+#nav li:hover .subnav{
+    display:block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    position:absolute;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    min-width: 30rem;
+}
+
+#nav .subnav a{
+    font-size: 1.5rem;
+    color:#000;
+    line-height: 5rem;
+    padding: 0 2rem;
+}
+
+
+
+.bright-section{
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content:center;
     flex-flow: column;
     position:relative;
-    /* z-index: 0; */
 }
 
-.personal-info .box-container,
-.personal-info .box-container-dark{
+#personal-info .box-container,
+#personal-info .box-container-dark{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -224,62 +207,60 @@ header.search-bar-container label:hover{
     padding: 3rem 3rem 5rem 3rem;
 }
 
-.personal-info .box-container-dark{
+#personal-info .box-container-dark{
     background: #333;
     width: 100%;
 }
 
-.personal-info .box-container .box,
-.personal-info .box-container-dark .box{
+#personal-info .box-container .box,
+#personal-info .box-container-dark .box{
     flex: 1 1 25rem;
     padding-top: 2rem;
 }
 
-.personal-info .box .textbox{
+#personal-info .box .textbox{
     padding: 0 3rem 2rem 3rem;
 }
 
-.personal-info .box-container .box .textbox:hover{
+#personal-info .box-container .box .textbox:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
 }
 
-.personal-info .box-container-dark .box .textbox:hover{
+#personal-info .box-container-dark .box .textbox:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0,1);
 }
 
-.personal-info .textbox h3{
+#personal-info .textbox h3{
     font-size: 2.5rem;
     padding-top: 2rem;
 }
 
-.personal-info h3,
+#personal-info h3,
 .dark-section h3{
     font-size: 2.5rem;
     padding-top: 2rem;
     color: var(--orange);
 }
 
-.personal-info p{
+#personal-info p{
     font-size:2rem;
-    color:#333;
     text-transform:none;
     padding: 2rem;
     text-align: justify;
     font-weight: normal;
 }
 
-
-.box-container h3,
-.box-container-dark h3{
-    color: var(--orange);
-}
-
-.personal-info .textbox p{
+#personal-info .textbox p{
     font-size: 1.5rem;
     padding: 0.7rem 0;
     text-transform: none;
     border-radius: 0.5rem;
     text-align: justify;
+}
+
+.box-container h3,
+.box-container-dark h3{
+    color: var(--orange);
 }
 
 .box-container p{
@@ -327,7 +308,7 @@ header.search-bar-container label:hover{
     -webkit-text-fill-color: transparent;
 }
 
-.group-process{
+.dark-section{
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -337,7 +318,7 @@ header.search-bar-container label:hover{
     background-color: #333;
 }
 
-.group-process .text-content p{
+.dark-section .text-content p{
     font-size: 2rem;
     color:#fff;
     text-transform:none;
@@ -345,22 +326,15 @@ header.search-bar-container label:hover{
     text-align: justify;
 }
 
-.career-plan{
-    min-height: 100vh;
-    display: flex;
-    justify-content:center;
-    flex-flow: column;
-    position:relative;
-    background-color: #fff;
-}
-.career-plan h3{
+
+#career-plan h3{
     font-size: 2.5rem;
     padding-top: 2rem;
     color: var(--orange);
 }
 
-.career-plan .person-plan p,
-.career-plan .person-plan th,td{
+#career-plan .person-plan p,
+#career-plan .person-plan th,td{
     font-size: 1.8rem;
     text-transform:none;
     color:#333;
@@ -380,7 +354,7 @@ table ul{
     padding: 1rem 1rem 1rem 4rem;
 }
 
-.career-plan table, th, td{
+#career-plan table, th, td{
     width: auto;
     border: 1px solid;
     border-collapse: collapse;
@@ -425,6 +399,7 @@ table ul{
     font-size: 1.5rem;
     padding: 0.7rem 0;
     color: #eee;
+    text-transform: none;
 }
 
 .footer .box-container .box a{
@@ -459,61 +434,5 @@ table ul{
 
 .footer .logo-container span{
     color: var(--orange);
-}
-
-
-
-
-
-
-
-
-
-
-
-/* media queries */
-@media (max-width:1265px){
-    #menu-bar{
-        display: initial;
-    }
-
-    header .navbar{
-        position: absolute;
-        top:100%;
-        right:0;
-        left:0;
-        background: #333;
-        border-top: .1rem solid rgba(255,255,255,.2);
-        padding: 1rem 2rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        border-radius: .5rem;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
-        background: #222;
-    }
-}
-
-@media (max-width:991px){
-    header{
-        padding: 2rem;
-    }
-}
-
-@media (max-width:450px){
-    html{
-        font-size: 50%;
-    }
-
-    .heading span{
-        font-size: 2.5rem;
-    }
 }
 

@@ -15,26 +15,54 @@
   <body>
      <!-- header section starts -->
      <header>
-      <div id="menu-bar" class="fas fa-bars"></div>
-
       <a href="index.html#home" class="logo"><span>HAQ</span>Group</a>
+      <ul id="nav">
+        <li>
+          <a href="index.html">Team Profile <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="#personal-info">Personal infomation</a></li>
+            <li><a href="#group-process">Group process</a></li>
+            <li><a href="#career-plan">Career plan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="project-desc.html">Project Description <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="project-desc.html#overview">Overview</a></li>
+            <li><a href="project-desc.html#motivation">Motivation</a></li>
+            <li><a href="project-desc.html#landscape">Landscape</a></li>
+            <li><a href="project-desc.html#detail-desc-p1">Aims, Plan & Progress</a></li>
+            <li><a href="project-desc.html#detail-desc-p2">Roles, Scopes & Limits</a></li>
+            <li><a href="project-desc.html#detail-desc-p3">Tools & Technology</a></li>
+            <li><a href="project-desc.html#detail-desc-p4">Risks & Group Communication</a></li>
+          </ul>
+        </li>
 
-      <nav class="navbar">
-        <a href="team-profile.html">team profile</a>
-        <a href="project-desc.html"> project description</a>
-        <a href="skill-job.html">skills & jobs</a>
-        <a href="product.html">product</a>
-        <a href="reflection.html">reflection</a>
-      </nav>
-       
-      <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-      </div>
-
-      <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
-      </form>
+        <li>
+          <a href="skill-job.html">Skills & Jobs <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="skill-job.html#dtb-admin">Database Administrator</a></li>
+            <li><a href="skill-job.html#data-sci">Data Scientist</a></li>
+            <li><a href="skill-job.html#web-dev">Web developer</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">Project Outcomes <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="product.html#tool">Tools (Websites & repositories links)</a></li>
+            <li><a href="product.html#project-outcome">Project Outcomes</a></li>
+            <li><a href="product.html#gallery">Gallery</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="reflection.html">Reflection <i class="fa fa-caret-down"></i></a>
+          <ul class="subnav">
+            <li><a href="reflection.html#group-reflection">Group Reflection</a></li>
+            <li><a href="reflection.html#individual-reflection">Individual Reflection</a></li>
+            <li><a href="reflection.html#references">References</a></li>
+          </ul>
+        </li>
+      </ul>
     </header>
     <!-- header section ends -->
 
@@ -54,7 +82,7 @@
     <!-- home section ends -->
 
     <!-- Personal information section starts -->
-    <section class="personal-info" id="personal-info">
+    <section class="bright-section" id="personal-info">
       <h1 class="heading">
         <span>t</span>
         <span>e</span>
@@ -144,7 +172,7 @@
     <!-- personal information section ends -->
 
     <!-- group processes section starts -->
-    <section class="group-process" id="group-process">
+    <section class="dark-section" id="group-process">
       <h1 class="heading">
         <span>g</span>
         <span>r</span>
@@ -169,7 +197,7 @@
     <!-- group processes section ends -->
 
     <!-- career plan section starts -->
-    <section class="career-plan" id="career-plan">
+    <section class="bright-section" id="career-plan">
       <h1 class="heading">
         <span>c</span>
         <span>a</span>
@@ -308,8 +336,7 @@
       <div class="box-container">
         <div class="box">
           <h3>about us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat beatae labore illum placeat. 
-            Nemo error delectus quae necessitatibus, amet obcaecati id deserunt ut laboriosam quasi veniam hic dicta atque rem?</p>
+          <p>HAQ Group was formed at the beginning of the project. The name HAQ comes from the first letter in the name of our group members, H for Han, A for Anh, and Q for Quang. </p>
         </div>
 
         <div class="box">
@@ -334,9 +361,5 @@
       
     </section>
     <!-- footer section ends -->
-
-    
-    <!-- custom js file link -->
-    <script src="./TeamWeb/script.js"></script>
   </body>
 </html>

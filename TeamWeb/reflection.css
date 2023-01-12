@@ -12,6 +12,7 @@
     text-transform: capitalize;
     outline:none;
     border: none;
+    text-decoration: none;
     transition: all .2s linear;
 }
 
@@ -27,18 +28,13 @@ html{
     scroll-behavior:smooth;
 }
 
-header a{
-    text-decoration: none;
-}
-
 section{
     padding: 2rem 9%;
 }
 
 .heading{
     text-align: center;
-    padding: 0 0 2.5rem 0;
-    margin-top: 82px;
+    padding: 5rem 3rem 2.5rem 0;
 }
 
 .heading span{
@@ -132,7 +128,6 @@ header .logo span
     padding: 0 2rem;
 }
 
-
 .bright-section{
     min-height: 100vh;
     display: flex;
@@ -159,14 +154,6 @@ header .logo span
     font-weight: normal;
 }
 
-.bright-section li{
-    font-size:1.8rem;
-    color:#333;
-    text-transform:none;
-    font-weight: normal;
-    margin-left: 10rem;
-}
-
 .dark-section{
     min-height: 100vh;
     display: flex;
@@ -185,82 +172,13 @@ header .logo span
     font-weight: normal;
 }
 
-.dark-section li{
-    font-size:1.8rem;
-    color:#fff;
-    text-transform:none;
-    font-weight: normal;
-    margin-left: 10rem;
+.dark-section #Anh-reflection{
+    background-color: #eee;
 }
 
-.dark-section table th,
-.dark-section table td{
-    font-size: 1.8rem;
-    text-transform:none;
-    color:#eee;
+.dark-section #Anh-reflection p{
+    color: #333;
 }
-
-.bright-section table th{
-    font-size: 1.8rem;
-    text-transform:none;
-    color:#eee;
-}
-
-.bright-section table td{
-    font-size: 1.8rem;
-    text-transform:none;
-    color:#333;
-}
-
-table th{
-    font-weight: bold;
-    padding: 1rem;
-}
-
-table td{
-    padding: 1rem 1rem;
-}
-
-table .table-name{
-    background-color: #492800;
-    text-transform: capitalize;
-}
-
-table th{
-    background-color: #7a4300;
-}
-
-table .section-title{
-    background-color: #ab5e00;
-    text-align: left;
-}
-
-.dark-section table, th, td{
-    width: auto;
-    border: 1px solid;
-    border-collapse: collapse;
-}
-
-.space-break{
-    height:5rem;
-}
-
-#detail-desc-p1 table ul{
-    margin-left: 0;
-}
-
-#detail-desc-p1 li{
-    font-size: 1.8rem;
-    text-transform:none;
-    color:#eee;
-}
-
-br{
-    display: block;
-    content: "";
-    margin: 1rem 0;
-}
-
 
 .footer{
     background-color: #333;
@@ -295,7 +213,6 @@ br{
     padding: 0.7rem 0;
     color: #eee;
     display: block;
-    text-decoration: none;
 }
 
 .footer .box-container .box a:hover{
@@ -319,9 +236,9 @@ br{
     font-size: 5rem;
     color:#fff;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .footer .logo-container span{
     color: var(--orange);
 }
+
